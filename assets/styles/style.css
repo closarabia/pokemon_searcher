@@ -1,0 +1,17 @@
+@import "lib/vars.css";
+@import "lib/mixins.css";
+@import "lib/fontface.css";
+
+* {
+  border: 1px solid tomato;
+}
+
+html,
+body {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #333;
+  background-color: #fff;
+  min-height: 100vh;
+  font-family: $font_family_base;
+}
