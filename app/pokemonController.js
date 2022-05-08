@@ -57,15 +57,18 @@ const renderPokemons = () => {
     pokemons.forEach(pokemon => {
         pokemonsHTML += `
         <div class="pokemon">
-            <h3>${pokemon.name}</h3>
+            <h1>${pokemon.name}</h1>
             <picture>
             <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
             </picture>
-            <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            </ul>
+            <div class="abilities">
+                <ul>
+                    <li class="ability">${pokemon.abilities[0].ability.name}</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            
         </div>
     `
     })
